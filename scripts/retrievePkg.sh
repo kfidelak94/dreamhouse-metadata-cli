@@ -1,6 +1,9 @@
 #!/bin/bash
 
-sfdx force:mdapi:retrieve -r retrievePkgOutput -p MyPkg -s -u Prod
+targetusernameOrAlias=$1
+packageName=$2
+
+sfdx force:mdapi:retrieve -r retrievePkgOutput -p ${packageName} -s -u ${targetusernameOrAlias} 
 unzip retrievePkgOutput/unpackaged.zip -d retrievePkgOutput
 
 #    <!-- Retrieve metadata for all the packages specified under packageNames -->

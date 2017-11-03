@@ -1,6 +1,8 @@
 #!/bin/bash
 
-sfdx force:mdapi:retrieve -r retrieveUnpackaged -k mdDir/package.xml -u Prod
+targetusernameOrAlias=$1
+
+sfdx force:mdapi:retrieve -r retrieveUnpackaged -k mdDir/package.xml -u ${targetusernameOrAlias} 
 
 
 
