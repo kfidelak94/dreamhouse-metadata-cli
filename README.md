@@ -1,10 +1,10 @@
 # dreamhouse-metadata-cli
 
-This repository includes a set of sample scripts and Metadata that can be used to perform metadata deploy and retrieve operations with the Salesforce CLI.  The scripts are based on Ant targets from the sample build.xml delivered with the Salesforce Ant Migration Tool, and are designed to allow you to move to the new Salesforce CLI and perform the same operations you've previously done with Ant. 
+This repository includes a set of sample scripts and metadata that can be used to perform metadata deploy and retrieve operations with the Salesforce CLI.  The scripts are intended to replicate metadata deploy and retrieve Ant targets that have been delivered with the Ant Migration Tool in the the sample build.xml, thereby allowing you to easily move from the Ant Migration Tool to the Salesforce CLI for your Metadata deploy and retrieve tasks.
 
 The sample Metadata is provided in both compressed (zip) format as well as uncompressed.  The Metadata is based on the sample sfdx-dreamhouse project.  This sample Metadata is referenced in the scripts for deploy and retrieve.  Modify the scripts to point to your own Metadata as desired.
 
-The scripts take an argument for the "targetusername", which can be either the username or Alias associated with a connected org.
+The scripts take an argument for the "targetusername", which can be either the username or alias associated with a connected org.
 
 Sample usage:
 
